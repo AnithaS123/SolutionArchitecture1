@@ -4,7 +4,7 @@ cloud-architecture-diagram
 API gateway [icon: aws-api-gateway]
 Lambda [icon: aws-lambda]
 S3 [icon: aws-simple-storage-service]
-VPC Subnet [icon: aws-vpc]{
+AWS Cloud [icon: aws-vpc]{
     Main Server {
       Server [icon: aws-ec2]
     Data [icon: aws-rds]
@@ -14,10 +14,9 @@ VPC Subnet [icon: aws-vpc]{
       Worker1 [icon: aws-ec2]
       Worker2 [icon: aws-ec2]
       Worker3 [icon: aws-ec2]
-      Worker4 [icon: aws-ec2]
-      Worker5 [icon: aws-ec2]
   }
 }
+
 Analytics [icon: aws-redshift]
 
 // Define connections

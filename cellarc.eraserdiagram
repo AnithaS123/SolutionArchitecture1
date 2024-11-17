@@ -1,0 +1,57 @@
+// Cell-Based architecture diagram
+
+// Define groups and nodes
+Cell-Based Architecture Overview {
+
+Users [icon: users]
+
+Routing Layer [color: green, colorMode: outline] {
+  Load balancer [icon: aws-elastic-load-balancing]
+  Router [icon: azure-virtual-router]
+  Cell assignment [icon: dynamodb]
+}
+
+Monitoring [color: blue, colorMode: bold]{
+  Monitor [icon: monitor]
+}
+
+Cell 1 {
+  LB1 [icon: gcp-cloud-load-balancing]
+  Web server1 [icon: server]
+  DB1 [icon: database]
+}
+
+Cell 2 {
+  LB2 [icon: gcp-cloud-load-balancing]
+  Web server2 [icon: server]
+  DB2 [icon: database]
+}
+
+Cell 3 {
+  LB3 [icon: gcp-cloud-load-balancing]
+  Web server3 [icon: server]
+  DB3 [icon: database]
+}
+
+ Cell Rebalancing Process [color: yellow, colorMode: outline]{
+  Process [icon: square]
+}
+
+  Application Analytics [color: red] {
+    Data Stream [icon: aws-ec2]
+    Data Lake [icon: aws-ec2]
+    Query Engine [icon: aws-ec2]
+  }
+
+}
+
+//Definitions
+Users > Routing Layer
+Load balancer > Router > Cell assignment
+Routing Layer > Monitoring
+Users > LB1 > Web server1 > DB1
+Users > LB2 > Web server2 > DB2
+Users > LB3 > Web server3 > DB3
+Cell Rebalancing Process > Cell assignment
+Data Stream > Data Lake > Query Engine
+
