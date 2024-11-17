@@ -11,9 +11,9 @@ AWS Cloud [icon: aws-vpc]{
   }
   Queue [icon: aws-auto-scaling]
   Compute Nodes [color: red] {
-      Worker1 [icon: aws-ec2]
-      Worker2 [icon: aws-ec2]
-      Worker3 [icon: aws-ec2]
+    Worker1 [icon: aws-ec2]
+    Worker2 [icon: aws-ec2]
+    Worker3 [icon: aws-ec2]
   }
 }
 
