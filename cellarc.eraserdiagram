@@ -15,6 +15,7 @@ Monitoring [color: blue, colorMode: bold]{
   Monitor [icon: monitor]
 }
 
+Cells {
 Cell 1 {
   LB1 [icon: gcp-cloud-load-balancing]
   Web server1 [icon: server]
@@ -32,7 +33,7 @@ Cell 3 {
   Web server3 [icon: server]
   DB3 [icon: database]
 }
-
+}
  Cell Rebalancing Process [color: yellow, colorMode: outline]{
   Process [icon: square]
 }
