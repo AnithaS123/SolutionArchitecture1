@@ -1,0 +1,45 @@
+cloud-architecture-diagram
+
+// Define groups and nodes
+user [icon: users]
+// Lambda [icon: aws-lambda]
+// S3 [icon: aws-simple-storage-service]
+
+// VPC Subnet [icon: aws-vpc] {
+  // Main Server {
+  //   Server [icon: aws-ec2]
+  //   Data [icon: aws-rds]
+  // }
+
+  LB [icon: aws-elastic-load-balancing]
+  
+  VPC Subnet [icon: aws-vpc] {
+    GetRecomSer [icon: aws-managed-services]
+    SearchService [icon: aws-managed-services]
+    BookingService [icon: aws-managed-services]
+    BookingCon [icon: aws-managed-services]
+    BookingStatus [icon: aws-managed-services]
+    Cart DB [icon: aws-dynamodb]
+    Order DB [icon: aws-dynamodb]
+    InventoryDB [icon: aws-dynamodb]
+
+  }
+
+  
+// }
+
+// Analytics [icon: aws-redshift]
+
+// Define connections
+// API gateway > Server > Data
+// Server > Queue
+user > LB 
+LB > GetRecomSer, SearchService, BookingStatus
+SearchService > BookingService
+BookingService > Cart DB
+BookingCon > Order DB
+BookingCon > InventoryDB
+GetRecomSer > BookingService > BookingCon
+user   < BookingStatus
+
+// Compute Nodes > Analytics
