@@ -2,6 +2,7 @@ cloud-architecture-diagram
 
 // Define groups and nodes
 user [icon: users]
+API gateway [icon: aws-api-gateway]
 // Lambda [icon: aws-lambda]
 // S3 [icon: aws-simple-storage-service]
 
@@ -13,7 +14,7 @@ user [icon: users]
 
   LB [icon: aws-elastic-load-balancing]
   
-  VPC Subnet [icon: aws-vpc] {
+  VPC [icon: aws-vpc] {
     GetRecomSer [icon: aws-managed-services]
     SearchService [icon: aws-managed-services]
     BookingService [icon: aws-managed-services]
@@ -33,13 +34,13 @@ user [icon: users]
 // Define connections
 // API gateway > Server > Data
 // Server > Queue
-user > LB 
+user > API gateway > LB 
 LB > GetRecomSer, SearchService, BookingStatus
 SearchService > BookingService
 BookingService > Cart DB
 BookingCon > Order DB
 BookingCon > InventoryDB
 GetRecomSer > BookingService > BookingCon
-user   < BookingStatus
+user < BookingStatus
 
 // Compute Nodes > Analytics
