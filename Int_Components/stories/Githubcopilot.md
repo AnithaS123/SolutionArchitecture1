@@ -63,7 +63,7 @@ In 2025, I took full ownership of Adarsh’s Savi Agentic AI program—a demand�
 
  I modernized the architecture using LangChain, AKS, Python/FastAPI, Azure Data Factory, and automated CI/CD, while running targeted training sessions. There was initial leadership resistance to investing in new tools, but I built a data‑backed business case and showed how AI‑enabled demand forecasting processes vast data sets to generate precise predictions.
 
- We delivered the first use‑case in two weeks instead of 2–3 months—an 80% cycle‑time reduction—and the forecasts now allow the client to optimize inventory levels, reduce waste, and boost profitability. This project reinforced the value of augmenting human talent with AI, and it established a repeatable playbook for future initiatives.
+ We delivered the first use‑case in two weeks instead of 2–3 months—an 80% cycle‑time reduction—and the forecasts now allow the client to optimize inventory levels, reduce waste, and boost profitability. This project reinforced , and it established a repeatable playbook for future initiatives.
 
 
 
