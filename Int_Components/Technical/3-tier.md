@@ -496,79 +496,46 @@ It’s like running a global footwear brand where stock NEVER runs out, and orde
 In technical terms:
 
 We lift and shift the existing 3-tier application to cloud compute services so we can scale elastically.
-
 Steps (Cloud-Agnostic Enterprise Approach)
-
 Containerize or VM-ize the existing app
 Package the application into a VM image or Docker container.
-
 Provision compute in the cloud
-
 AWS: EC2 / Auto Scaling Group (ASG)
-
 Azure: VM Scale Sets / App Service
-
 GCP: Managed Instance Groups (MIG)
-
 Attach a load balancer to distribute traffic
-
 AWS ALB, Azure Application Gateway, GCP HTTPS LB.
-
 Migrate the database
-
 AWS → RDS
-
 Azure → Azure SQL / MySQL/Postgres
-
 GCP → Cloud SQL
-
 DNS cutover
 Point the domain to cloud front-end load balancer.
-
 Why this solves the problem
-
 Cloud compute gives you elasticity — machines can scale up or out instantly based on traffic, without purchasing hardware.
 
 2. “How do you deliver images faster?”
-
 We use a Content Delivery Network (CDN).
-
 Approach
-
 Store static content (images, CSS, JS) in object storage:
-
 AWS S3
-
 Azure Blob
-
 GCP Cloud Storage
-
 Attach a CDN layer:
-
 AWS CloudFront
-
 Azure Front Door / Azure CDN
-
 GCP Cloud CDN
-
 Enable caching, compression, cache invalidation policies.
 
 Result
-
 Images load from an edge location near the user.
-
 Reduces latency, offloads compute, improves page speed and SEO.
-
 This is essential when scaling from 100k → millions of users.
 
 3. “What is a backup system?”
-
 A backup system is a multi-layered data protection strategy.
-
 Cloud Implementation
-
-Automated database backups
-
+Automated database backupss
 RDS automated backups
 
 Azure SQL PITR backups

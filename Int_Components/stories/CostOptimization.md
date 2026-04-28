@@ -58,6 +58,7 @@ I reused this playbook later to create similar multi-agent delivery patterns for
 
 This is your enterprise-grade delivery:
 
+----------------------------------
 
 “During 2025, I led the full development of our SAVI Agentic AI platform for a CRM client whose Databricks-based architecture was generating unsustainable costs. The team had originally built everything inside notebooks, assuming it would scale. I performed a deep dive and identified that we were overspending without gaining any architectural advantage. Initially there was resistance, but I took ownership of educating stakeholders using cost telemetry and performance benchmarks.
 
@@ -65,6 +66,7 @@ I re-architected the entire pipeline by shifting development out of Databricks i
 
 This transformation reduced cost from INR 435,000 to 136,000—almost a 70% optimization—while increasing deployment velocity by 3x and enabling 24/7 CRM automation. The project became a blueprint for future agentic AI initiatives and reinforced my belief that cost and architecture governance must scale together.”
 
+---------------------------------------
 
 Followup Questions : 
 “How did you gain alignment despite resistance?”

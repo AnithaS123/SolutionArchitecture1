@@ -5,8 +5,8 @@
   "elements": [
     {
       "type": "text",
-      "version": 171,
-      "versionNonce": 1200406005,
+      "version": 172,
+      "versionNonce": 204863565,
       "isDeleted": false,
       "id": "IrM8wpf4DOxQUb9gnQWIb",
       "fillStyle": "solid",
@@ -26,7 +26,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734286980447,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -37,12 +37,14 @@
       "containerId": null,
       "originalText": "Functional Requirements\n\n1. View feed\n2. Create a post (text, image or video)\n3. Comment and like on post\n4. Search for friends\n5. Follow users\n",
       "lineHeight": 1.15,
-      "baseline": 143
+      "baseline": 143,
+      "index": "a0",
+      "autoResize": true
     },
     {
       "type": "text",
-      "version": 93,
-      "versionNonce": 670620821,
+      "version": 94,
+      "versionNonce": 1954430723,
       "isDeleted": false,
       "id": "UFa8hnTNslez5lstXYscD",
       "fillStyle": "solid",
@@ -62,7 +64,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734287026334,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -73,12 +75,14 @@
       "containerId": null,
       "originalText": "Assumptions :\n1. User profile creations\n2. Authentication and Authorization\n",
       "lineHeight": 1.15,
-      "baseline": 70
+      "baseline": 70,
+      "index": "a1",
+      "autoResize": true
     },
     {
       "type": "text",
-      "version": 258,
-      "versionNonce": 1853728027,
+      "version": 259,
+      "versionNonce": 1221289645,
       "isDeleted": false,
       "id": "-OR9KqxpvjqsUHwzOEN8O",
       "fillStyle": "solid",
@@ -98,7 +102,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734287237114,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -109,12 +113,14 @@
       "containerId": null,
       "originalText": "Non - Functional Requirements : \n1. Like/Comments (Low Latency)\n2. View Post (Eventuall consistency) --> its fine because if user see the post \nin 2 or 1 min delay.",
       "lineHeight": 1.15,
-      "baseline": 70
+      "baseline": 70,
+      "index": "a2",
+      "autoResize": true
     },
     {
       "type": "text",
-      "version": 786,
-      "versionNonce": 276980213,
+      "version": 789,
+      "versionNonce": 1293238349,
       "isDeleted": false,
       "id": "uPJIX5yfuSLltIqa2oTdA",
       "fillStyle": "solid",
@@ -134,23 +140,25 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734288409675,
+      "updated": 1776396694998,
       "link": null,
       "locked": false,
       "fontSize": 16,
       "fontFamily": 2,
-      "text": "Capacity Estimation:\n\n2B MAU\nDAU = 2*10^9/30 days\n\n\n50% of the users post 3 times a month\n= 1B users * 3 post / 30days\n=10^9 * 3/30 days\n=10^8 post per day\n=100 * 10^6 * 10^6\n=100TB post per day\n\n\nAssuming the average post is 10MB size\nStore requirements for posts = 100M post/day * 10MB per post\n= 100 * 10^6 * 10^6\n=100 * 10^12\n= 100 TB storage per day\n\n\nDatabase Design:\n\n\n1. User DB : SQl\n",
+      "text": "Capacity Estimation:\n\n2B MAU\nDAU = 2*10^9/30 days\n\n\n50% of the users post 3 times a month\n= 1B users * 3 post / 30days\n=10^9 * 3/30 days\n=10^8 post per day\n=100 * 10^6 * 10^6\n=100TB post per day\n\n\nAssuming the average post is 10MB size\nStore requirements for posts = 100M post/day * 10MB per post\n= 100 * 10^6 * 10^6\n=100 * 10^12\n= 100 TB storage per day\n\n\nDatabase Design:\n\n\n1. User DB : SQL\n",
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Capacity Estimation:\n\n2B MAU\nDAU = 2*10^9/30 days\n\n\n50% of the users post 3 times a month\n= 1B users * 3 post / 30days\n=10^9 * 3/30 days\n=10^8 post per day\n=100 * 10^6 * 10^6\n=100TB post per day\n\n\nAssuming the average post is 10MB size\nStore requirements for posts = 100M post/day * 10MB per post\n= 100 * 10^6 * 10^6\n=100 * 10^12\n= 100 TB storage per day\n\n\nDatabase Design:\n\n\n1. User DB : SQl\n",
+      "originalText": "Capacity Estimation:\n\n2B MAU\nDAU = 2*10^9/30 days\n\n\n50% of the users post 3 times a month\n= 1B users * 3 post / 30days\n=10^9 * 3/30 days\n=10^8 post per day\n=100 * 10^6 * 10^6\n=100TB post per day\n\n\nAssuming the average post is 10MB size\nStore requirements for posts = 100M post/day * 10MB per post\n= 100 * 10^6 * 10^6\n=100 * 10^12\n= 100 TB storage per day\n\n\nDatabase Design:\n\n\n1. User DB : SQL\n",
       "lineHeight": 1.15,
-      "baseline": 474
+      "baseline": 474,
+      "index": "a3",
+      "autoResize": true
     },
     {
       "type": "rectangle",
-      "version": 792,
-      "versionNonce": 679769461,
+      "version": 793,
+      "versionNonce": 23333133,
       "isDeleted": false,
       "id": "_c2lVfMU4Z6muGicvjC-N",
       "fillStyle": "hachure",
@@ -172,14 +180,15 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734288329389,
+      "updated": 1776392774539,
       "link": null,
-      "locked": false
+      "locked": false,
+      "index": "a4"
     },
     {
       "type": "line",
-      "version": 697,
-      "versionNonce": 1671429845,
+      "version": 698,
+      "versionNonce": 1032231491,
       "isDeleted": false,
       "id": "bz-kG2u3zk6aSuZIyK6fM",
       "fillStyle": "hachure",
@@ -203,7 +212,7 @@
         "type": 2
       },
       "boundElements": [],
-      "updated": 1734288329389,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "startBinding": null,
@@ -220,12 +229,13 @@
           341.152829249224,
           -2.1830732514465754
         ]
-      ]
+      ],
+      "index": "a5"
     },
     {
       "type": "text",
-      "version": 459,
-      "versionNonce": 26190512,
+      "version": 460,
+      "versionNonce": 930701165,
       "isDeleted": false,
       "id": "P36elHwt1xqOj0PeoX0sd",
       "fillStyle": "solid",
@@ -247,7 +257,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1742984592638,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "fontSize": 20.262704189611977,
@@ -258,12 +268,14 @@
       "containerId": null,
       "originalText": "User ID (PK) : UUID",
       "lineHeight": 1.15,
-      "baseline": 19
+      "baseline": 19,
+      "index": "a6",
+      "autoResize": true
     },
     {
       "type": "text",
-      "version": 180,
-      "versionNonce": 1322607989,
+      "version": 181,
+      "versionNonce": 518019555,
       "isDeleted": false,
       "id": "Hrx1WqjUwxmqPcaUArPAV",
       "fillStyle": "solid",
@@ -285,7 +297,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734288318391,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -296,12 +308,14 @@
       "containerId": null,
       "originalText": "LastName : (String)\nEmail : (String)\nPhone Number : (Numeric)\nCreated DTTM : (DTTM)\nLast Login : (DTTM)\n\n\n",
       "lineHeight": 1.15,
-      "baseline": 143
+      "baseline": 143,
+      "index": "a7",
+      "autoResize": true
     },
     {
       "type": "text",
-      "version": 127,
-      "versionNonce": 424747003,
+      "version": 128,
+      "versionNonce": 22342093,
       "isDeleted": false,
       "id": "DcxLLUt4QY264Sf5hRcRb",
       "fillStyle": "solid",
@@ -323,7 +337,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734288249121,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -334,12 +348,14 @@
       "containerId": null,
       "originalText": "FirstName : (String)",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 15,
+      "index": "a8",
+      "autoResize": true
     },
     {
       "type": "text",
-      "version": 128,
-      "versionNonce": 827592085,
+      "version": 129,
+      "versionNonce": 438379907,
       "isDeleted": false,
       "id": "tPRsmKwibDI5bd82WsX3Z",
       "fillStyle": "solid",
@@ -361,7 +377,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734288329389,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -372,12 +388,14 @@
       "containerId": null,
       "originalText": "Username : (String)",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 15,
+      "index": "a9",
+      "autoResize": true
     },
     {
       "type": "text",
-      "version": 20,
-      "versionNonce": 865623131,
+      "version": 21,
+      "versionNonce": 1880107053,
       "isDeleted": false,
       "id": "LA0cOWUNuqQMHbgwc-JwJ",
       "fillStyle": "solid",
@@ -397,7 +415,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734288376256,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -408,12 +426,14 @@
       "containerId": null,
       "originalText": "2. Connection DB :\n",
       "lineHeight": 1.15,
-      "baseline": 33
+      "baseline": 33,
+      "index": "aA",
+      "autoResize": true
     },
     {
       "type": "rectangle",
-      "version": 274,
-      "versionNonce": 748916283,
+      "version": 275,
+      "versionNonce": 1988590883,
       "isDeleted": false,
       "id": "iCqDwf8sUgSgWrIul3l-c",
       "fillStyle": "hachure",
@@ -435,14 +455,15 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1734288434192,
+      "updated": 1776392774539,
       "link": null,
-      "locked": false
+      "locked": false,
+      "index": "aB"
     },
     {
       "type": "line",
-      "version": 213,
-      "versionNonce": 791416539,
+      "version": 214,
+      "versionNonce": 898931341,
       "isDeleted": false,
       "id": "ZlA7INc2G0FStFlv-k8j1",
       "fillStyle": "hachure",
@@ -466,7 +487,7 @@
         "type": 2
       },
       "boundElements": [],
-      "updated": 1734288434192,
+      "updated": 1776392774539,
       "link": null,
       "locked": false,
       "startBinding": null,
@@ -483,11 +504,14 @@
           528.9495094709046,
           -3.384804188881999
         ]
-      ]
+      ],
+      "index": "aC"
     }
   ],
   "appState": {
-    "gridSize": null,
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
     "viewBackgroundColor": "#ffffff"
   },
   "files": {}
